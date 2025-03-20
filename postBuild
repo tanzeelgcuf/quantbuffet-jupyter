@@ -1,0 +1,4 @@
+#!/bin/bash
+jupyter notebook --generate-config
+echo "c.NotebookApp.tornado_settings = {'headers': {'Content-Security-Policy': 'frame-ancestors *'}}" >> ~/.jupyter/jupyter_notebook_config.py
+chmod +x postBuild
